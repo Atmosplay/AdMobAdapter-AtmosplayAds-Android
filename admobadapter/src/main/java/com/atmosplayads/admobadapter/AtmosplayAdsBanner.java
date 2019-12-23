@@ -3,6 +3,8 @@ package com.atmosplayads.admobadapter;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import com.atmosplayads.AtmosplayAdsSettings;
@@ -25,6 +27,8 @@ public class AtmosplayAdsBanner implements CustomEventBanner {
     private static final String TAG = "AtmosplayAdsBanner";
 
     private AtmosplayBanner mBanner;
+    private Handler mHandler = new Handler(Looper.myLooper());
+    private Context mContext;
 
     @Override
     public void requestBannerAd(Context context, final CustomEventBannerListener customEventBannerListener, String s, AdSize adSize, MediationAdRequest mediationAdRequest, Bundle bundle) {
@@ -34,6 +38,7 @@ public class AtmosplayAdsBanner implements CustomEventBanner {
             customEventBannerListener.onAdFailedToLoad(AdRequest.ERROR_CODE_INVALID_REQUEST);
             return;
         }
+        mContext = context;
 
         AtmosplayAdsUtil.AtmosplayParams params = new AtmosplayAdsUtil.AtmosplayParams(s);
 
@@ -56,6 +61,11 @@ public class AtmosplayAdsBanner implements CustomEventBanner {
             @Override
             public void onBannerPreparedFailed(int code, String error) {
                 Log.d(TAG, "onBannerPreparedFailed code: " + code + " ,errorMsg: " + error);
+                mHandler.postDelayed(new Runnable() {
+                    public void run() {
+                       onDestroy();
+                    }
+                }, 9000);
                 customEventBannerListener.onAdFailedToLoad(code);
             }
 
@@ -80,14 +90,25 @@ public class AtmosplayAdsBanner implements CustomEventBanner {
 
     @Override
     public void onDestroy() {
-        mBanner.destroy();
+        Log.d(TAG, "onDestroy");
+        ((Activity)mContext).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mBanner != null) {
+                    mBanner.destroy();
+                    mBanner = null;
+                }
+            }
+        });
     }
 
     @Override
     public void onPause() {
+        Log.d(TAG, "onPause");
     }
 
     @Override
     public void onResume() {
+        Log.d(TAG, "onResume");
     }
 }
