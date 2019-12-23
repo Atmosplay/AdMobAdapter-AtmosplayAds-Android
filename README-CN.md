@@ -1,12 +1,12 @@
-* [1 接入Atmosplay Ads SDK和AdMob SDK](#1-接入atmosplay-ads-sdk和admob-sdk)
-    * [1.1 添加Atmosplay Ads SDK依赖](#11-添加atmosplay-ads-sdk依赖)
-    * [1.2 添加AdMob广告SDK依赖](#12-添加admob广告sdk依赖)
-    * [1.3 将可玩Adapter导入到工程中](#13-将可玩adapter导入到工程中)
-* [2 在AdMob平台添加Atmoplay Ads广告源](#2-在admob平台添加atmosplay-ads广告源)
-    * [2.1 添加新应用](#21-添加新应用)
-    * [2.2 添加新广告位](#22-添加新广告位)
-    * [2.3 添加Atmosplay Ads广告源](#23-添加atmosplay-ads广告源)    
-* [3 测试](#3-测试)
+- [1 接入Atmosplay Ads SDK和AdMob SDK](#1-%e6%8e%a5%e5%85%a5atmosplay-ads-sdk%e5%92%8cadmob-sdk)
+  - [1.1 添加Atmosplay Ads SDK依赖](#11-%e6%b7%bb%e5%8a%a0atmosplay-ads-sdk%e4%be%9d%e8%b5%96)
+  - [1.2 添加AdMob广告SDK依赖](#12-%e6%b7%bb%e5%8a%a0admob%e5%b9%bf%e5%91%8asdk%e4%be%9d%e8%b5%96)
+  - [1.3 将可玩Adapter导入到工程中](#13-%e5%b0%86%e5%8f%af%e7%8e%a9adapter%e5%af%bc%e5%85%a5%e5%88%b0%e5%b7%a5%e7%a8%8b%e4%b8%ad)
+- [2 在AdMob平台添加Atmosplay Ads广告源](#2-%e5%9c%a8admob%e5%b9%b3%e5%8f%b0%e6%b7%bb%e5%8a%a0atmosplay-ads%e5%b9%bf%e5%91%8a%e6%ba%90)
+  - [2.1 添加新应用](#21-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%ba%94%e7%94%a8)
+  - [2.2 添加新广告位](#22-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%b9%bf%e5%91%8a%e4%bd%8d)
+  - [2.3 添加Atmosplay Ads广告源](#23-%e6%b7%bb%e5%8a%a0atmosplay-ads%e5%b9%bf%e5%91%8a%e6%ba%90)
+- [3 测试](#3-%e6%b5%8b%e8%af%95)
 
 
 ## 1 接入Atmosplay Ads SDK和AdMob SDK
@@ -109,22 +109,25 @@ f. 输入第三方广告源名称，此处以Atmosplay Network为例，可根据
 g. 对Atmosplay Network广告源进行配置。在Class Name中填写完整的适配器类名，以demo中适配器类名为例，
 
 Banner为
+
 `com.atmosplayads.admobadapter.AtmosplayAdsBanner`
 
 插屏为
+
 `com.atmosplayads.admobadapter.AtmosplayAdsInterstitial`
 
 激励视频为
+
 `com.atmosplayads.admobadapter.AtmosplayAdsRewardedVideo`
 
-Parameter中需填写您在Atmosplay Ads申请的[应用ID](https://sellers.zplayads.com/#/app/appList/)和[广告位ID](https://sellers.zplayads.com/#/ad/placeList/)两个参数，点击“DONE”完成Atmosplay Ads的配置
+Parameter中需填写您在Atmosplay Ads申请的[应用ID](https://sellers.atmosplay.net/#/app/appList/)和[广告位ID](https://sellers.atmosplay.net/#/ad/placeList/)两个参数，点击“DONE”完成Atmosplay Ads的配置
 
 ```json
 {"appId":"youAppId","unitId":"yourUnitId"}
 ```
 ![image](imgs/014mediationgroupcreate7.png)
 
-h. Ad source列表中可以看到所设置的广告源Atmosplay Native，点击“SAVE”完成Mediation的配置
+h. Ad source列表中可以看到所设置的广告源Atmosplay Network，点击“SAVE”完成Mediation的配置
 
 ![image](imgs/015mediationgroupcreate8.png)
 
@@ -134,7 +137,7 @@ i. 检查第三方广告源是否添加完成，在[Apps列表](https://apps.adm
 
 ## 3 测试
 
-您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[Atmosplay Ads](https://sellers.zplayads.com)申请的正式ID。
+您在测试中可使用如下ID进行测试，测试ID不会产生收益，应用上线时请使用您在[Atmosplay Ads](https://sellers.atmosplay.net/#/app/appList/)申请的正式ID。
 
 | 广告形式 | App_ID                               | Ad_Unit_id                           |
 | -------- | ------------------------------------ | ------------------------------------ |
