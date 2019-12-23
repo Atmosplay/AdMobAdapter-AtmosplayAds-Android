@@ -76,6 +76,9 @@ public class InterstitialActivity extends Activity {
 
 
     public void loadAd(View view) {
+        if(mInterstitialAd.isLoaded()){
+           return;
+        }
         mLogView.setText("");
         mProgressBar.setVisibility(View.VISIBLE);
         AdRequest req = new AdRequest.Builder().build();
