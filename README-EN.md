@@ -54,7 +54,7 @@ Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atm
 
 Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
 
-Rewarded Video Adapter：[AtmosplayRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayRewardedVideo.java)
+Rewarded Video Adapter：[AtmosplayAdsRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideo.java)
 
 Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
 
