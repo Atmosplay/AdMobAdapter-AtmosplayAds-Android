@@ -30,7 +30,7 @@ import static com.google.android.gms.ads.reward.mediation.MediationRewardedVideo
  * Created by yfb on 2019/12/18.
  */
 
-public class AtmosplayRewardedVideo extends Adapter implements MediationRewardedAd {
+public class AtmosplayAdsRewardedVideo extends Adapter implements MediationRewardedAd {
     private static final String TAG = "AtmosplayRewardedVideo";
     private AtmosplayRewardVideo mRewardVideo;
     private AtmosplayAdsUtil.AtmosplayParams params;
@@ -136,7 +136,7 @@ public class AtmosplayRewardedVideo extends Adapter implements MediationRewarded
                 @Override
                 public void onLoadFinished() {
                     Log.d(TAG, "onLoadFinished");
-                    rewardedAdCallback = mediationAdLoadCallback.onSuccess(AtmosplayRewardedVideo.this);
+                    rewardedAdCallback = mediationAdLoadCallback.onSuccess(AtmosplayAdsRewardedVideo.this);
                 }
 
                 @Override
