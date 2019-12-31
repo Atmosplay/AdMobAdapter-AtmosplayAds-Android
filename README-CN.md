@@ -1,12 +1,13 @@
-- [1 接入Atmosplay Ads SDK和AdMob SDK](#1-%e6%8e%a5%e5%85%a5atmosplay-ads-sdk%e5%92%8cadmob-sdk)
-  - [1.1 添加Atmosplay Ads SDK依赖](#11-%e6%b7%bb%e5%8a%a0atmosplay-ads-sdk%e4%be%9d%e8%b5%96)
-  - [1.2 添加AdMob广告SDK依赖](#12-%e6%b7%bb%e5%8a%a0admob%e5%b9%bf%e5%91%8asdk%e4%be%9d%e8%b5%96)
-  - [1.3 将可玩Adapter导入到工程中](#13-%e5%b0%86%e5%8f%af%e7%8e%a9adapter%e5%af%bc%e5%85%a5%e5%88%b0%e5%b7%a5%e7%a8%8b%e4%b8%ad)
-- [2 在AdMob平台添加Atmosplay Ads广告源](#2-%e5%9c%a8admob%e5%b9%b3%e5%8f%b0%e6%b7%bb%e5%8a%a0atmosplay-ads%e5%b9%bf%e5%91%8a%e6%ba%90)
-  - [2.1 添加新应用](#21-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%ba%94%e7%94%a8)
-  - [2.2 添加新广告位](#22-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%b9%bf%e5%91%8a%e4%bd%8d)
-  - [2.3 添加Atmosplay Ads广告源](#23-%e6%b7%bb%e5%8a%a0atmosplay-ads%e5%b9%bf%e5%91%8a%e6%ba%90)
-- [3 测试](#3-%e6%b5%8b%e8%af%95)
+* [1 接入Atmosplay Ads SDK和AdMob SDK](#1-接入atmosplay-ads-sdk和admob-sdk)
+    * [1.1 添加Atmosplay Ads SDK依赖](#11-添加atmosplay-ads-sdk依赖)
+    * [1.2 添加AdMob广告SDK依赖](#12-添加admob广告sdk依赖)
+    * [1.3 添加权限](#13-添加权限)
+    * [1.4 将可玩Adapter导入到工程中](#14-将可玩adapter导入到工程中)
+* [2 在<a href="https://apps.admob.com/v2/home" rel="nofollow">AdMob平台</a>添加Atmosplay Ads广告源](#2-在admob平台添加atmosplay-ads广告源)
+    * [2.1 添加新应用](#21-添加新应用)
+    * [2.2 添加新广告位](#22-添加新广告位)
+    * [2.3 添加Atmosplay Ads广告源](#23-添加atmosplay-ads广告源)
+* [3 测试](#3-测试)
 
 
 ## 1 接入Atmosplay Ads SDK和AdMob SDK
@@ -41,8 +42,13 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:17.2.0'
 }
 ```
+### 1.3 添加权限
+```xml
+<!-- 国内渠道必须添加，Googleplay 可不加 -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
 
-### 1.3 将可玩Adapter导入到工程中
+### 1.4 将可玩Adapter导入到工程中
 Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
 
 插屏Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
