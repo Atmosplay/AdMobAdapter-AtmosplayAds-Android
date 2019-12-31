@@ -1,7 +1,8 @@
 - [1 Integrate Atmosplay Ads SDK and AdMob SDK](#1-integrate-atmosplay-ads-sdk-and-admob-sdk)
   - [1.1 Add Atmosplay Ads SDK Dependence](#11-add-atmosplay-ads-sdk-dependence)
   - [1.2 Add AdMob Ads SDK Dependence](#12-add-admob-ads-sdk-dependence)
-  - [1.3 Import Atmosplay Ads Adapter into project](#13-import-atmosplay-ads-adapter-into-project)
+  - [1.3 Add permission into AndroidManifest](#13-add-permission-into-androidmanifest)
+  - [1.4 Import Atmosplay Ads Adapter into project](#14-import-atmosplay-ads-adapter-into-project)
 - [2 Add Atmosplay Ads as a New Network on AdMob](#2-add-atmosplay-ads-as-a-new-network-on-admob)
   - [2.1 Add New App](#21-add-new-app)
   - [2.2 Add New Ad Unit](#22-add-new-ad-unit)
@@ -49,7 +50,13 @@ dependencies {
 
 About integrating of AdMob, please refers to [Official Documentation](https://developers.google.com/admob/android/quick-start#import_the_mobile_ads_sdk)
 
-### 1.3 Import Atmosplay Ads Adapter into project 
+### 1.3 Add permission into AndroidManifest
+```xml
+<!-- Required for China-Mainland Traffic app -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
+
+### 1.4 Import Atmosplay Ads Adapter into project 
 Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
 
 Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
