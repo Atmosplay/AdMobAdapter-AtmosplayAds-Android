@@ -6,7 +6,7 @@
   - [2.1 Add New App](#21-add-new-app)
   - [2.2 Add New Ad Unit](#22-add-new-ad-unit)
   - [2.3 Add Atmosplay Ads as a New Network on AdMob](#23-add-atmosplay-ads-as-a-new-network-on-admob)
-- [3 Test](#3-Test)
+- [3 Test](#3-test)
 
 ## 1 Integrate Atmosplay Ads SDK and AdMob SDK
 Using Android Studio as an example, here are some major steps. Please refer to [AdMob SDK Integration Guide](https://developers.google.com/admob/android/quick-start) when integrate AdMob.
@@ -50,13 +50,15 @@ dependencies {
 About integrating of AdMob, please refers to [Official Documentation](https://developers.google.com/admob/android/quick-start#import_the_mobile_ads_sdk)
 
 ### 1.3 Import Atmosplay Ads Adapter into project 
-Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
+- Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
 
-Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
+- Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
 
-Rewarded Video Adapter：[AtmosplayRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayRewardedVideo.java)
+- Rewarded Video Adapter：[AtmosplayRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayRewardedVideo.java)
 
-Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
+- Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
+
+*If you are using Unity deelopment environment, please add all the files above to the projects `Assets/Plugins/Android` directory*
 
 Util Class(which contains some common methods, such as parsing the json issued by AdMob, or converting the error code)：[AtmosplayAdsUtil.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsUtil.java)
 
