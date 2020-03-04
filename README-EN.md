@@ -58,7 +58,7 @@ About integrating of AdMob, please refers to [Official Documentation](https://de
 
 - Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
 
-*If you are using Unity deelopment environment, please add all the files above to the projects `Assets/Plugins/Android` directory*
+*If you are using Unity deelopment environment, please add all the files above to the projects `Assets/Plugins/Android` directory.*
 
 Util Class(which contains some common methods, such as parsing the json issued by AdMob, or converting the error code)：[AtmosplayAdsUtil.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsUtil.java)
 
