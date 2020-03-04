@@ -57,15 +57,17 @@ About integrating of AdMob, please refers to [Official Documentation](https://de
 ```
 
 ### 1.4 Import Atmosplay Ads Adapter into project 
-Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
+- Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
 
-Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
+- Interstitial Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
 
-Rewarded Video Adapter：[AtmosplayAdsRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideo.java)
+- Rewarded Video Adapter：[AtmosplayAdsRewardedVideo.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideo.java)
 
-Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
+- Admob Rewarded old Custom Events Adapter：[AtmosplayAdsRewardedVideoLegacy.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsRewardedVideoLegacy.java)
 
-Util Class(which contains some common methods, such as parsing the json issued by AdMob, or converting the error code)：[AtmosplayAdsUtil.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsUtil.java)
+- Util Class(which contains some common methods, such as parsing the json issued by AdMob, or converting the error code)：[AtmosplayAdsUtil.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsUtil.java)
+
+*If you are using Unity deelopment environment, please add all the files above to the projects `Assets/Plugins/Android` directory.*
 
 > If you want to know more about Adapter and Request, please refer to the code sample in [DEMO](https://github.com/Atmosplay/AdMobAdapter-AtmosplayAds-Android).
 
