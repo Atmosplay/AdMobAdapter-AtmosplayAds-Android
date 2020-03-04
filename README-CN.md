@@ -1,7 +1,7 @@
 - [1 接入Atmosplay Ads SDK和AdMob SDK](#1-%e6%8e%a5%e5%85%a5atmosplay-ads-sdk%e5%92%8cadmob-sdk)
   - [1.1 添加Atmosplay Ads SDK依赖](#11-%e6%b7%bb%e5%8a%a0atmosplay-ads-sdk%e4%be%9d%e8%b5%96)
   - [1.2 添加AdMob广告SDK依赖](#12-%e6%b7%bb%e5%8a%a0admob%e5%b9%bf%e5%91%8asdk%e4%be%9d%e8%b5%96)
-  - [1.3 将可玩Adapter导入到工程中](#13-%e5%b0%86%e5%8f%af%e7%8e%a9adapter%e5%af%bc%e5%85%a5%e5%88%b0%e5%b7%a5%e7%a8%8b%e4%b8%ad)
+  - [1.3 将Atmosplay Adapter导入到工程中](#13-%e5%b0%86%e5%8f%af%e7%8e%a9adapter%e5%af%bc%e5%85%a5%e5%88%b0%e5%b7%a5%e7%a8%8b%e4%b8%ad)
 - [2 在AdMob平台添加Atmosplay Ads广告源](#2-%e5%9c%a8admob%e5%b9%b3%e5%8f%b0%e6%b7%bb%e5%8a%a0atmosplay-ads%e5%b9%bf%e5%91%8a%e6%ba%90)
   - [2.1 添加新应用](#21-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%ba%94%e7%94%a8)
   - [2.2 添加新广告位](#22-%e6%b7%bb%e5%8a%a0%e6%96%b0%e5%b9%bf%e5%91%8a%e4%bd%8d)
@@ -42,7 +42,7 @@ dependencies {
 }
 ```
 
-### 1.3 将可玩Adapter导入到工程中
+### 1.3 将Atmosplay Adapter导入到工程中
 Bannder Adapter：[AtmosplayAdsBanner.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsBanner.java)
 
 插屏Adapter：[AtmosplayAdsInterstitial.java](./admobadapter/src/main/java/com/atmosplayads/admobadapter/AtmosplayAdsInterstitial.java)
